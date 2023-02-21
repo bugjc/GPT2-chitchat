@@ -17,7 +17,7 @@ $(function(){
 		return;
 	}
 
-	socket = new WebSocket("ws://120.48.169.252:7397");
+	socket = new WebSocket("ws://121.4.230.65:7397");
 
 	socket.onmessage = function(event){
 
