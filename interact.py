@@ -214,8 +214,8 @@ def main_websocket():
 
     async def start_server():
         try:
-            async with websockets.serve(server, "192.168.0.4", 7397):
-                print("Starting server at ws://localhost:7397")
+            async with websockets.serve(server, "121.4.230.65", 7397):
+                print("Starting server at ws://121.4.230.65:7397")
                 await asyncio.Future()  # run forever
         except OSError as e:
             print(f"Error starting server: {e}")
