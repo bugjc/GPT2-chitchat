@@ -1,7 +1,9 @@
+import os
+from os.path import join
+
 import numpy as np
 import torch
-from os.path import join
-import os
+
 
 class EarlyStopping:
     """Early stops the training if validation loss doesn't improve after a given patience."""

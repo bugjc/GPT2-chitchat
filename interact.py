@@ -1,14 +1,15 @@
 # -*- coding: utf-8 -*-
-import torch
-import os
 import argparse
-from datetime import datetime
-import logging
-from transformers import GPT2TokenizerFast, GPT2LMHeadModel, GPT2Config
-from transformers import BertTokenizerFast
-import torch.nn.functional as F
 import asyncio
+import logging
+import os
+from datetime import datetime
+
+import torch
+import torch.nn.functional as F
 import websockets
+from transformers import BertTokenizerFast
+from transformers import GPT2TokenizerFast, GPT2LMHeadModel, GPT2Config
 
 PAD = '[PAD]'
 pad_id = 0
