@@ -186,7 +186,7 @@ def train_epoch(model, train_dataloader, optimizer, scheduler, logger,
                 logger.info(
                     "batch {} of epoch {}, loss {}, batch_acc {}, lr {}".format(
                         batch_idx + 1, epoch + 1, loss.item() * args.gradient_accumulation_steps, batch_acc,
-                        scheduler.get_lr()))
+                        scheduler.get_last_lr()))
 
             del input_ids, outputs
 
